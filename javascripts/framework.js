@@ -135,9 +135,9 @@ function ViewConstructor(options) {
         selector = parts.length > 1 ? parts.slice(1).join(' ') : undefined;
         event = parts[0];
         if (selector) {
-          $el.on(event + '.view', selector, this.events[prop].bind(this));
+          $el.on(event + '.view', selector, this.events[prop];
         } else {
-          $el.on(event + '.view', this.events[prop].bind(this));
+          $el.on(event + '.view', this.events[prop]);
         }
       }
     },
